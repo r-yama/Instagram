@@ -8,7 +8,7 @@ class NoticeMailer < ApplicationMailer
   def sendmail_post(post)
     @post = post
 
-    mail to: "r.yamashita69@gmail.com"
+    mail to: "r.yamashita69@gmail.com",
          subject: '【Instagram】投稿されました'
   end
 end
