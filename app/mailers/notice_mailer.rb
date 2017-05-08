@@ -9,6 +9,6 @@ class NoticeMailer < ApplicationMailer
     @post = post
 
     mail to: "r.yamashita69@gmail.com"
-         subject: '【Instagram】ブログが投稿されました'
+         subject: '【Instagram】投稿されました'
   end
 end
