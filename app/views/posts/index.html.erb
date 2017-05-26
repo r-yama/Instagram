@@ -7,6 +7,8 @@
     <div class="row">
       <h4><strong><%= post.name %></strong></h4>
       <h4><strong><%= post.title %></strong></h4>
+      <strong>post.image:</strong>
+      <%= image_tag @image.image.url %>
       <p><%= post.content %></p>
       <%= link_to "編集", edit_post_path(post.id), class: 'btn btn-default btn-sm btn-success' %>
       <%= link_to '削除', post_path(post.id), method: :delete, data: { confirm: '本当に削除していいですか？' }, class: 'btn btn-default btn-sm btn btn-danger' %>
